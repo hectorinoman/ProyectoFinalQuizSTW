@@ -17,6 +17,7 @@ exports.answer = function(req, res){
 	});
 };
 
+
 var Quiz = require('../models/quiz_model');
 var quiz = new Quiz();
 var current = quiz.randomQuestion();
