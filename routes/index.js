@@ -14,7 +14,7 @@ router.get('/quizes/questions/:id', quizController.specificQuestion);
 
 //Nuevas Rutas
 router.get('/quizes', quizController.index);
-router.get('/quizes/:id', quizController.show);
-router.get('/quizes/:id/answer', quizController.answer);
+router.get('/quizes/:quizID(\\d+)', quizController.show);
+router.get('/quizes/:quizID(\\d+)/answer', quizController.answer);
 
 module.exports = router;
