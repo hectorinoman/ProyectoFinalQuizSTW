@@ -12,4 +12,9 @@ router.get('/quizes/answer', quizController.answer);
 router.get('/quizes/questions', quizController.questions);
 router.get('/quizes/questions/:id', quizController.specificQuestion);
 
+//Nuevas Rutas
+router.get('/quizes', quizController.index);
+router.get('/quizes/:id', quizController.show);
+router.get('/quizes/:id/answer', quizController.answer);
+
 module.exports = router;
