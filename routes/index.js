@@ -8,15 +8,17 @@ router.get('/', function(req, res) {
 });
 
 router.param('quizId', quizController.load); //QUIZ 10
-
+/*
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
 router.get('/quizes/questions', quizController.questions);
 router.get('/quizes/questions/:id', quizController.specificQuestion);
+*/
+
 
 //Nuevas Rutas
 router.get('/quizes', quizController.index);
-router.get('/quizes/:quizID(\\d+)', quizController.show);
-router.get('/quizes/:quizID(\\d+)/answer', quizController.answer);
+router.get('/quizes/:quizId(\\d+)', quizController.show);
+router.get('/quizes/:quizId(\\d+)/answer', quizController.answer);
 
 module.exports = router;

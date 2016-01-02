@@ -18,7 +18,9 @@ exports.load =function(req, res, next, quizId){
 
 
 exports.show = function(req, res){
+	models.Quiz.find(req.params.quizId).then(function(quiz){
 		res.render('quizes/show', {quiz: req.quiz});
+	})
 };
 
 exports.answer = function(req, res){
@@ -32,12 +34,13 @@ exports.answer = function(req, res){
 exports.index = function(req, res){
 	models.Quiz.findAll().then(function(quizes) {
 		res.render('quizes/index.ejs', {quizes: quizes});
-	}).catch(function(error){ next(error);})
+	})
 };
 
 
 
 
+/*
 
 var Quiz = require('../models/quiz_model');
 var quiz = new Quiz();
@@ -78,3 +81,5 @@ exports.specificQuestion = function(req, res) {
 		res.render('quizes/question', {pregunta: current.pregunta});
 	}
 };
+
+*/
