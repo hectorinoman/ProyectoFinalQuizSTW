@@ -1,20 +1,18 @@
 var express = require('express');
 var router = express.Router();
 var quizController = require('../controllers/quiz_controller');
-
+var sessionController = require('../controllers/session_controller');
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' , errors: []}); 
 });
 
-router.param('quizId', quizController.load); //QUIZ 10
-/*
-router.get('/quizes/question', quizController.question);
-router.get('/quizes/answer', quizController.answer);
-router.get('/quizes/questions', quizController.questions);
-router.get('/quizes/questions/:id', quizController.specificQuestion);
-*/
+router.param('quizId', quizController.load); 
 
+// Definición de rutas de sesion
+router.get('/login',  sessionController.new);     // formulario login
+router.post('/login', sessionController.create);  // crear sesión
+router.get('/logout', sessionController.destroy); // destruir sesión
 
 //Nuevas Rutas
 router.get('/quizes', quizController.index);
