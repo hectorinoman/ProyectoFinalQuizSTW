@@ -10,34 +10,40 @@ body					{font: 16px Georgia, serif;
                         }
 #page-wrap > .main 		{border: 0px solid #FFFFFF; padding: 1%;
 						 margin-bottom: 0px; color: black;
-                        background: white;
+                         background: white;
                         }
 
 section > div			{padding: 20px;}
 header, nav, section	{background: #eee; 
-                        text-align: center;
+                         text-align: center;
                         
 }
 footer					{margin: 40% auto; 
-                            background: #eee; text-align: center;
+                            background: #eee;
 
 }
 nav span				{margin: 0px 0px 0px 0px;}
 
 #ErrorMsgs				{color: #f61; font-size: smaler;} 
 
+#page-wrap > nav             {text-align:left;}
 
 .right{
     float: right;
 }
 
-
+#page-wrap > section         {text-align:center; margin: 0px 13px 0px 0px;}
 
 
 a {
   color: #00B7FF;
+  text-decoration:none;  
 }
 
+table{
+    text-align: left;
+    
+}
 
 a.boton {
   text-decoration: none;
@@ -53,21 +59,17 @@ a.boton:active {
   border: 1px inset #000;
 }
 
-
-
-
 p{
     font-family: "Homer Simpson";
     font-size: 150%; 
 }    
-
 
 h3{
   color: #8080ff;
 }
 
 h2{
-  color: #3333ff;
+  color: #3D8ADC;
 }
 
 h1{
@@ -188,12 +190,12 @@ h1{
 }
 
 .btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #3D8ADC;
+  background-image: -webkit-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: -moz-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: -ms-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: -o-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: linear-gradient(to bottom, #3D8ADC, #3498db);
   text-decoration: none;
 }
    
