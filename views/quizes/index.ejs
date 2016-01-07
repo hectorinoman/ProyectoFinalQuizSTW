@@ -5,7 +5,7 @@
 		<% if (session.user) { %>
 			<% if (session.user.isAdmin || session.user.id === quizes[i].UserId) {%>
 		
-			<td><a href="/quizes/<%= quizes[i].id %>/edit"><button>editar</a></td>
+			<td><a href="/quizes/ class="button" <%= quizes[i].id %>/edit"><button>editar</a></td>
 
 			<td>
 				<form method="post" action="/quizes/<%= quizes[i].id %>?_method=delete">
@@ -21,5 +21,5 @@
 </table>
 
 <% if (session.user) { %>
-	<a href="/quizes/new"><button type="button">Crear pregunta</button></a>
+	<a href="/quizes/new"><button type="button" class="button">Crear pregunta</button></a>
 <% } %>
