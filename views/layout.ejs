@@ -21,7 +21,7 @@
 
       <header class="main" id="h1">
 	<%if(!session.user){%>
-      	<span class="right"><a href="/user">Sign up</a> - <a href="/login">Login</a></span>
+      	<span class="right"><a class="button" href="/user">Sign up</a> - <a class="button" href="/login">Login</a></span>
     	<%}else{%>
       	<span class="right"> <%=session.user.username%> - <a href="/user/<%=session.user.id%>/edit">Settings</a> - <a href="/logout">Logout</a></span>
     	<%}%>

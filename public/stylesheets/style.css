@@ -24,6 +24,20 @@ a {
   color: #00B7FF;
 }
 
+a.boton {
+  text-decoration: none;
+  background: #EEE;
+  color: #222;
+  border: 1px outset #CCC;
+  padding: .1em .5em;
+}
+a.boton:hover {
+  background: #CCB;
+}
+a.boton:active {
+  border: 1px inset #000;
+}
+
 h3{
   color: #8080ff;
 }
