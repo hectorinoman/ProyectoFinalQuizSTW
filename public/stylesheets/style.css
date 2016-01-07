@@ -45,6 +45,13 @@ table{
     
 }
 
+input       { 
+              text-align: left;       /* Align input to the right  */
+               
+              border-radius: 20px 20px 20px 20px;
+              padding: 5px  5px;
+              font-size:large;       }
+
 a.boton {
   text-decoration: none;
   background: #EEE;
