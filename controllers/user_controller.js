@@ -1,6 +1,22 @@
 var models = require('../models/models.js');
 
 
+
+exports.ownershipRequired = function(req, res, next){
+    var objUser = req.user.id;
+    var logUser = req.session.user.id;
+    var isAdmin = req.session.user.isAdmin;
+    
+    if (isAdmin || objUser === logUser) {
+        next();
+    } else {
+        res.redirect('/');
+    }
+};
+
+
+
+
 // Autoload :id
 exports.load = function(req, res, next, userId) {
    models.User.find({
