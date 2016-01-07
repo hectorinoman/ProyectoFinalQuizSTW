@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var quizController = require('../controllers/quiz_controller');
+var userController = require('../controllers/user_controller');
 
 var sessionController = require('../controllers/session_controller');
 
@@ -14,11 +15,20 @@ router.get('/', function(req, res) {
 
 router.param('quizId', quizController.load); 
 router.param('commentId', commentController.load);
+router.param('userId', userController.load);  // autoload :userId
 
 // Definición de rutas de sesion
 router.get('/login',  sessionController.new);     // formulario login
 router.post('/login', sessionController.create);  // crear sesión
 router.get('/logout', sessionController.destroy); // destruir sesión
+
+
+router.get('/user',  userController.new);     // formulario sign un
+router.post('/user',  userController.create);     // registrar usuario
+router.get('/user/:userId(\\d+)/edit',  sessionController.loginRequired, userController.edit);     // editar información de cuenta
+router.put('/user/:userId(\\d+)',  sessionController.loginRequired, userController.update);     // actualizar información de cuenta
+router.delete('/user/:userId(\\d+)',  sessionController.loginRequired, userController.destroy);     // borrar cuenta
+
 
 //Nuevas Rutas
 router.get('/quizes', quizController.index);
