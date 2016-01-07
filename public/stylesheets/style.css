@@ -10,28 +10,29 @@ body					{font: 16px Georgia, serif;
                         }
 #page-wrap > .main 		{border: 0px solid #FFFFFF; padding: 1%;
 						 margin-bottom: 0px; color: black;
-                        background: white;
+                         background: white;
                         }
 
 section > div			{padding: 20px;}
 header, nav, section	{background: #eee; 
-                        text-align: center;
+                         text-align: center;
                         
 }
 footer					{margin: 40% auto; 
-                            background: #eee; text-align: center;
+                            background: #eee;
 
 }
 nav span				{margin: 0px 0px 0px 0px;}
 
 #ErrorMsgs				{color: #f61; font-size: smaler;} 
 
+#page-wrap > nav             {text-align:left;}
 
 .right{
     float: right;
 }
 
-
+#page-wrap > section         {text-align:center; margin: 0px 13px 0px 0px;}
 
 
 a {
@@ -53,14 +54,10 @@ a.boton:active {
   border: 1px inset #000;
 }
 
-
-
-
 p{
     font-family: "Homer Simpson";
     font-size: 150%; 
 }    
-
 
 h3{
   color: #8080ff;
