@@ -37,8 +37,13 @@ nav span				{margin: 0px 0px 0px 0px;}
 
 a {
   color: #00B7FF;
+  text-decoration:none;  
 }
 
+table{
+    text-align: left;
+    
+}
 
 a.boton {
   text-decoration: none;
@@ -64,7 +69,7 @@ h3{
 }
 
 h2{
-  color: #3333ff;
+  color: #3D8ADC;
 }
 
 h1{
@@ -115,12 +120,12 @@ h1{
 }
 
 .btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #3D8ADC;
+  background-image: -webkit-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: -moz-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: -ms-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: -o-linear-gradient(top, #3D8ADC, #3498db);
+  background-image: linear-gradient(to bottom, #3D8ADC, #3498db);
   text-decoration: none;
 }
    
