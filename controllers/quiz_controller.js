@@ -34,11 +34,18 @@ exports.answer = function(req, res){
 		res.render('quizes/answer', { quiz: req.quiz, respuesta: resultado, errors: []});
 };
 
-exports.index = function(req, res){
-	models.Quiz.findAll().then(
-		function(quizes) {
-			res.render('quizes/index.ejs', {quizes: quizes, errors: []});
-	}).catch(function(error) {next(error);})
+// GET /users/:userId/quizes
+exports.index = function(req, res) {  
+  var options = {};
+  if(req.user){
+    options.where = {UserId: req.user.id}
+  }
+  
+  models.Quiz.findAll(options).then(
+    function(quizes) {
+      res.render('quizes/index.ejs', {quizes: quizes, errors: []});
+    }
+  ).catch(function(error){next(error)});
 };
 
 exports.new = function(req, res) {

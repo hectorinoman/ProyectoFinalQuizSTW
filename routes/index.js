@@ -35,6 +35,6 @@ router.post('/quizes/:quizId(\\d+)/comments', commentController.create);
 router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish',  //USO INCORRECTO DE GET, DEBERÍA SER UN PUT porque se modifica la BBDD
 	           sessionController.loginRequired, commentController.publish);
 
-
+router.get('/user/:userId(\\d+)/quizes',  quizController.index);     // ver las preguntas de un usuario
 
 module.exports = router;
