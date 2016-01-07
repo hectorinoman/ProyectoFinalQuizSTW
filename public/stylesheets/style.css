@@ -97,6 +97,76 @@ h1{
    text-decoration: none;
    vertical-align: middle;
    }
+
+
+.button_little {
+   border-top: 1px solid #96d1f8;
+   background: #3D8ADC;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3D8ADC), to(#3D8ADC));
+   background: -webkit-linear-gradient(top, #3D8ADC, #3D8ADC);
+   background: -moz-linear-gradient(top, #3D8ADC, #3D8ADC);
+   background: -ms-linear-gradient(top, #3D8ADC, #3D8ADC);
+   background: -o-linear-gradient(top, #3D8ADC, #3D8ADC);
+   padding: 5px 10px 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 10px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+   
+.button_edit {
+   border-top: 1px solid #96d1f8;
+   background: #F7BE81;
+   background: -webkit-gradient(linear, left top, left bottom, from(#F7BE81), to(#F7BE81));
+   background: -webkit-linear-gradient(top, #F7BE81, #F7BE81);
+   background: -moz-linear-gradient(top, #F7BE81, #F7BE81);
+   background: -ms-linear-gradient(top, #F7BE81, #F7BE81);
+   background: -o-linear-gradient(top, #F7BE81, #F7BE81);
+   padding: 5px 10px 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button_borrar {
+   border-top: 1px solid #96d1f8;
+   background: #FE2E2E;
+   background: -webkit-gradient(linear, left top, left bottom, from(#FE2E2E), to(#FE2E2E));
+   background: -webkit-linear-gradient(top, #FE2E2E, #FE2E2E);
+   background: -moz-linear-gradient(top, #FE2E2E, #FE2E2E);
+   background: -ms-linear-gradient(top, #FE2E2E, #FE2E2E);
+   background: -o-linear-gradient(top, #FE2E2E, #FE2E2E);
+   padding: 5px 10px 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }   
    
 
 .btn {
