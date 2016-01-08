@@ -1,10 +1,9 @@
-# Quiz Questions, EXPRESS JS
+# Proyecto Quiz
 
-En esta practica se pretende hacer un juego de preguntas con node y Express
+Proycto Quiz hecho para la asignatura Sistemas y Tecnologías Web de la Universidad de La Laguna de cuarto curso del grado de Ingeniería Informática impartido por el profesor Casiano Rodríguez León.
 
-- Despliegue: [http://10.6.128.89:8080/]
-- Pagina personal: [www.hectorinoman.github.io]
-- Repositorio: [https://github.com/hectorinoman/quizSTW]
+- Despliegue: [sistemasweb-hectorinoman.c9.io/quizes/new]
+- Repositorio: [https://github.com/hectorinoman/ProyectoFinalQuizSTW]
 
 
 
@@ -17,5 +16,14 @@ $ npm install
 - Luego debemos correr el servidor con:
 
  ```sh
-$ npm start
+$ nf start
+o
+$ foreman start
 ```
+
+
+Héctor Rodríguez Báez: [hectorinoman.github.io]
+
+Alejando Ravelo Moreno: [alu0100763379.github.io]
+
+Óscar Trujillo Acosta: [oscartrujillo.github.io]
