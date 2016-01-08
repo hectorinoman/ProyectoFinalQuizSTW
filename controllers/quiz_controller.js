@@ -48,7 +48,7 @@ exports.answer = function(req, res){
 };
 
 // GET /users/:userId/quizes
-exports.index = function(req, res) {  
+exports.index = function(req, res, next) {  
   var options = {};
   if(req.user){
     options.where = {UserId: req.user.id}
@@ -61,7 +61,7 @@ exports.index = function(req, res) {
   ).catch(function(error){next(error)});
 };
 
-exports.new = function(req, res) {
+exports.new = function(req, res, next) {
 	var quiz = models.Quiz.build(  // Crea objeto quiz
 			{pregunta: "Pregunta", respuesta: "Respuesta"}
 		);
@@ -69,7 +69,7 @@ exports.new = function(req, res) {
 	};
 
 // POST /quizes/create
-exports.create = function (req, res) {
+exports.create = function (req, res, next) {
 	req.body.quiz.UserId = req.session.user.id;
 	if(req.files.image){
     	req.body.quiz.image = req.files.image.name;
@@ -88,7 +88,7 @@ exports.create = function (req, res) {
 				.then( function(){res.redirect('/quizes')})
 			}
 		}
-		);
+		).catch(function(error){next(error)});
 };
 
 // GET /quizes/:id/edit
@@ -122,7 +122,7 @@ exports.update = function(req, res){
 };
 
 
-exports.destroy = function(req, res){
+exports.destroy = function(req, res, next){
 	req.quiz.destroy().then ( function(){
 	res.redirect('/quizes');
 }).catch(function(error){next (error)});
